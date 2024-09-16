@@ -18,7 +18,7 @@ z = "Hello, World"
 a = True
 
 # On the next line, store the boolean 'False' in the variable 'b'.
- b = False
+b = False
 
 # Use the print statement and the variable 'x' to display the message:
     # "10, is an integer variable."
@@ -82,27 +82,37 @@ print(type(False))
 
 # Addition: print the sum of 'x' and 'y'.
 
-
-print("The sum of 'x' and 'y' is:")
+total = x + y
+print("The sum of 'x' and 'y' is:" + total)
 
 # Subtraction: print the difference between 'x' and 'y'.
-print("The difference between 'x' and 'y' is: ")
+difference = x-y
+print("The difference between 'x' and 'y' is: " + difference)
 
 # Multiplication: print the product of 'x' and 'y'.
-print("The product of 'x' and 'y' is: ")
+
+product = x*y
+print("The product of 'x' and 'y' is: " + product)
 
 # Division: print the answer when you divide 'x' by 'y'.
-print("The division of 'x' by 'y' is:")
+
+division = x/y
+print("The division of 'x' by 'y' is:" + division)
 
 # Modulus (remainder of the division): print the remainder after dividing 'x' by 'y'.
-print("The modulus of 'x' and 'y' is: ")
+
+division_rem = x % y
+print("The modulus of 'x' and 'y' is: " + division_rem)
 
 
 # 4. Indentation: 
     # Python uses indentation to indicate the beginning and end of code blocks.
 # Complete the for loop below to print numbers 0 to 5    
-
+for i in range(6):
+    print(i)
 
 # for number in range(6):
-# print()  # This line is part of the for loop and it must be indented.
+# print() # This line is part of the for loop and it must be indented.
+
+
     
