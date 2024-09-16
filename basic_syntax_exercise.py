@@ -57,23 +57,24 @@ print(type(h))
 
 # Edit the code below to print:
     # "10 belongs to <class 'int'>: meaning it is an integer."
-print(type(10))
+print(f"'10' belongs to <class '{type(x)}'>: meaning it is integer.")
+    
 
 # Edit the code below to print:
     # " 20.5 belongs to <class 'float'>: meaning it is a float."
-print(type(20.5))
+print(f"'20.5' belongs to <class '{type(y)}'>: meaning it is float.")
 
 # Edit the code below to print:
     # " " 'False', is a boolean variable., belongs to <class 'str'>: meaning it is a string."
-print(type(False))
+print(f"'Hello, World!' belongs to <class '{type(z)}'>: meaning it is string.")
 
 # Edit the code below to print:
     # "'True', belongs to <class 'bool'>: meaning it is a boolean."
-print(type(True))
+print(f"'True' belongs to <class '{type(a)}'>: meaning it is boolean.")
 
 # Edit the code below to print:
     # "'False', belongs to <class 'bool'>: meaning it is a boolean.
-print(type(False))
+print(f"'False' belongs to <class '{type(b)}'>: meaning it is boolean.")
 
 
 # 3. Basic Operators: 
