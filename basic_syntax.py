@@ -6,11 +6,16 @@ def assign_variables():
         tuple: A tuple containing the values of variables x, y, z, a, and b.
     """
     # Assign the integer 10 to the variable x.
+    x = 10
     # Assign the float 20.5 to the variable y.
+    y = 20.5
     # Assign the string 'Hello, World!' to the variable z.
+    z = 'Hello, World!'
     # Assign the boolean True to the variable a.
+    a = True
     # Assign the boolean False to the variable b.
-    return # Return the values of x, y, z, a, and b as a tuple.
+    b = False
+    return [x,y,z,a,b]# Return the values of x, y, z, a, and b as a tuple.
 
 def get_variable_type(variable):
     """
@@ -23,7 +28,8 @@ def get_variable_type(variable):
         str: A string representing the data type of the input variable.
     """
     variable_type = type(variable).__name__  # Get the data type of the input variable.
-    return # Return the data type as a string.
+    # Return the data type as a string.
+    return  variable_type
 
 def get_variable_types():
     """
@@ -35,10 +41,15 @@ def get_variable_types():
     x, y, z, a, b = assign_variables # Assign values to x, y, z, a, and b using the assign_variables function.
     type_x = get_variable_type(x)  # Get the data type of x using the get_variable_type function.
     # Get the data type of y using the get_variable_type function.
+    type_y = get_variable_type(y)
     # Get the data type of z using the get_variable_type function.
+    type_z = get_variable_type(z)
     # Get the data type of a using the get_variable_type function.
+    type_a = get_variable_type(a)
     # Get the data type of b using the get_variable_type function.
-    return # Return the data types as a tuple.
+    type_b = get_variable_type(b)
+
+    return [type_x , type_y , type_z , type_a , type_b]# Return the data types as a tuple.
 
 def arithmetic_operations():
     """
@@ -48,12 +59,12 @@ def arithmetic_operations():
         tuple: A tuple containing the results of addition, subtraction, multiplication, division, and modulus operations.
     """
     x, y, z, a, b = assign_variables # Assign values to x, y, z, a, and b using the assign_variables function.
-    sum_result # Calculate the sum of x and y.
-    difference_result  # Calculate the difference between x and y.
-    product_result # Calculate the product of x and y.
-    division_result  # Calculate the division of x by y.
-    modulus_result  # Calculate the modulus of x and y.
-    return  # Return the results as a tuple.
+    sum_result = x + y# Calculate the sum of x and y.
+    difference_result = x - y # Calculate the difference between x and y.
+    product_result = x * y # Calculate the product of x and y.
+    division_result = x / y # Calculate the division of x by y.
+    modulus_result = x % y # Calculate the modulus of x and y.
+    return   [sum_result, difference_result, product_result, division_result, modulus_result]# Return the results as a tuple.
 
 def get_numbers():
     """
@@ -70,6 +81,8 @@ def get_numbers():
 if __name__ == "__main":
     x, y, z, a, b = assign_variables()  # Call the assign_variables function and store the values in x, y, z, a, and b.
     print("Variable types:")
+
+def get_variable_types(type_x, type_y, type_z, type_a, type_b):
     type_x, type_y, type_z, type_a, type_b = get_variable_types()  # Call the get_variable_types function to get data types.
     print(f"'10' belongs to <class '{type_x}'>: meaning it is {type_x}.")
     print(f"'20.5' belongs to <class '{type_y}'>: meaning it is {type_y}.")
@@ -77,14 +90,19 @@ if __name__ == "__main":
     print(f"'True' belongs to <class '{type_a}'>: meaning it is {type_a}.")
     print(f"'False' belongs to <class '{type_b}'>: meaning it is {type_b}.")
 
-    print("\nArithmetic operations:")
-    sum_result, difference_result, product_result, division_result, modulus_result = arithmetic_operations()  # Call the arithmetic_operations function.
-    print(f"The sum of 'x' and 'y' is: {sum_result}")
-    print(f"The difference between 'x' and 'y' is: {difference_result}")
-    print(f"The product of 'x' and 'y' is: {product_result}")
-    print(f"The division of 'x' by 'y' is: {division_result}")
-    print(f"The modulus of 'x' and 'y' is: {modulus_result}")
 
+def arithmetic_operations(sum_result, difference_result, product_result, division_result, modulus_result):
+     print("\nArithmetic operations:")
+
+sum_result, difference_result, product_result, division_result, modulus_result = arithmetic_operations()  # Call the arithmetic_operations function.
+print(f"The sum of 'x' and 'y' is: {sum_result}")
+print(f"The difference between 'x' and 'y' is: {difference_result}")
+print(f"The product of 'x' and 'y' is: {product_result}")
+print(f"The division of 'x' by 'y' is: {division_result}")
+print(f"The modulus of 'x' and 'y' is: {modulus_result}")
+
+
+def get_numbers():
     print("\nNumbers 0 to 5:")
-    numbers = get_numbers()  # Call the get_numbers function to get the list of numbers.
-    print(numbers)  # Print the list of numbers.
+numbers = get_numbers()  # Call the get_numbers function to get the list of numbers.
+print(numbers)  # Print the list of numbers.
